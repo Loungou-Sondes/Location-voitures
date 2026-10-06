@@ -594,4 +594,107 @@ nav a:hover {
     font-size: 30px;
   }
 
+
+}
+
+/* =========================================================
+   NOTRE LOCAL
+========================================================= */
+
+.local {
+  padding: 80px 20px;
+  background: white;
+}
+
+.local-content {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+
+  align-items: center;
+  gap: 50px;
+}
+
+.local-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  object-fit: contain;
+
+  border-radius: 15px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.local-text h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.local-text p {
+  color: #666;
+  line-height: 1.7;
+  font-size: 18px;
+}
+
+.local-button {
+  display: inline-block;
+
+  margin-top: 20px;
+
+  padding: 14px 25px;
+
+  background: #111;
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 8px;
+
+  font-weight: bold;
+}
+
+.local-button:hover {
+  background: #333;
+}
+
+
+/* =========================================================
+   LOCAL — MOBILE
+========================================================= */
+
+@media (max-width: 800px) {
+
+  .local-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .local-image img {
+    height: 300px;
+  }
+
+  .local-text {
+    text-align: center;
+  }
+
+  .local-text h2 {
+    font-size: 32px;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .local {
+    padding: 60px 20px;
+  }
+
+  .local-image img {
+    height: 250px;
+  }
+
 }
